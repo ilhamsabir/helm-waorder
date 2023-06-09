@@ -3,7 +3,6 @@
 # Declare variables to be passed into your templates.
 
 fullname: waorder-deployment
-labels: waorder-deployment
 replicaCount: 3
 selectorLabels: waorder
 
