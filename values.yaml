@@ -2,10 +2,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-fullname: "waorder-deployment"
-labels: "waorder"
+fullname: waorder-deployment
+labels: waorder-deployment
 replicaCount: 3
-selectorLabels: "waorder"
+selectorLabels: waorder
 
 image:
   repository: ilhamsabir/adsch-be
