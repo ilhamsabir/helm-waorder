@@ -2,16 +2,16 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-fullname: waorder-deployment
-labels: waorder
+fullname: "waorder-deployment"
+labels: "waorder"
 replicaCount: 3
-selectorLabels: waorder
+selectorLabels: "waorder"
 
 image:
-  repository: ilhamsabir/adsch-be:tagname
+  repository: ilhamsabir/adsch-be
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 service:
   type: ClusterIP
