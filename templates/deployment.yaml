@@ -10,6 +10,7 @@ spec:
       app: {{ .Values.selectorLabels }}
   template:
     metadata:
+      name: {{ .Values.fullname }}
       labels: {{ .Values.selectorLabels }}
     spec:
       containers:
