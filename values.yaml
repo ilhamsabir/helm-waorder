@@ -2,10 +2,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-fullname: waOrder-deployment
-labels: waOrder
+fullname: waorder-deployment
+labels: waorder
 replicaCount: 3
-selectorLabels: waOrder
+selectorLabels: waorder
 
 image:
   repository: ilhamsabir/adsch-be:tagname
