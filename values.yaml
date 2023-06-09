@@ -13,8 +13,8 @@ image:
   tag: "latest"
 
 service:
-  type: ClusterIP
-  port: 8081
+  type: NodePort
+  port: 8080
 
 serviceAccount:
   # Specifies whether a service account should be created
