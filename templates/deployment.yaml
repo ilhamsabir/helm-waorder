@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.fullname }}
-  labels:
-    app: {{ .Values.selectorLabels }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -11,8 +9,8 @@ spec:
       app: {{ .Values.selectorLabels }}
   template:
     metadata:
-      name: {{ .Values.fullname }}
-      labels: {{ .Values.selectorLabels }}
+      labels:
+        app: {{ .Values.selectorLabels }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
