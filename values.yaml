@@ -13,8 +13,12 @@ image:
   tag: "latest"
 
 service:
-  type: ClusterIP
+  # type: ClusterIP
+  type: NodePort
   port: 8080
+  name: adsch-be-api
+  targetPort: 8080
+  nodeport: 3001
 
 serviceAccount:
   # Specifies whether a service account should be created
